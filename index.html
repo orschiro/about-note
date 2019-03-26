@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>about:note</title>
+<link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+
+<div id="mainView">
+
+	<article id="editor">
+		<div class="body">
+		</div>
+	</article>
+
+<!-- / #mainView --></div>
+
+<section id="setting">
+	<h1>Setting</h1>
+	<div class="body">
+		<table>
+			<tr>
+				<th>Size</th>
+				<td><input type="range" name="fontSize" value="15" min="10" max="36" /></td>
+			</tr>
+			<tr>
+				<th>Font</th>
+				<td>
+					<select name="fontFamily">
+						<option value="sans-serif">sans-serif</option>
+						<option value="serif">serif</option>
+					</select>
+				</td>
+			</tr>
+		</table>
+	</div>
+<!-- / #setting --></section>
+
+<nav id="utils">
+	<ul>
+		<li id="btnTabDefault">Default</li>
+	</ul>
+</nav>
+
+<!-- Scripts [[[ -->
+<script src="components/jquery/jquery.min.js"></script>
+<script src="js/main.js"></script>
+<!-- ]]] Scripts -->
+
+</body>
+</html>

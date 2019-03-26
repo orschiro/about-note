@@ -1,0 +1,453 @@
+@charset "UTF-8";
+/* --------------------------------------------------
+    import
+-------------------------------------------------- */
+/* compass
+---------------------------------------------- */
+/* line 17, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* mixin
+---------------------------------------------- */
+/* --------------------------------------------------
+    mixin
+-------------------------------------------------- */
+/* clearfix
+---------------------------------------------- */
+/* text-overflow-ellipsis
+---------------------------------------------- */
+/* user-select-none
+---------------------------------------------- */
+/* pointer event none
+---------------------------------------------- */
+/* pointer event auto
+---------------------------------------------- */
+/* --------------------------------------------------
+    vars
+-------------------------------------------------- */
+/* length
+---------------------------------------------- */
+/* color
+---------------------------------------------- */
+@font-face {
+  font-family: 'WebSymbolsRegular';
+  src: url("../fonts/websymbols-regular-webfont.eot");
+  src: url("../fonts/websymbols-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/websymbols-regular-webfont.woff") format("woff"), url("../fonts/websymbols-regular-webfont.ttf") format("truetype"), url("../fonts/websymbols-regular-webfont.svg#WebSymbolsRegular") format("svg");
+}
+
+@font-face {
+  font-family: 'Typicons';
+  src: url("../fonts/typicons-regular-webfont.eot");
+  src: url("../fonts/typicons-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/typicons-regular-webfont.woff") format("woff"), url("../fonts/typicons-regular-webfont.ttf") format("truetype"), url("../fonts/typicons-regular-webfont.svg#TypiconsRegular") format("svg");
+}
+
+/* animation
+---------------------------------------------- */
+@-webkit-keyframes fadeIn {
+  /* line 51, ../sass/main.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 52, ../sass/main.scss */
+  65% {
+    opacity: 0;
+  }
+
+  /* line 53, ../sass/main.scss */
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes rotate {
+  /* line 58, ../sass/main.scss */
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  /* line 59, ../sass/main.scss */
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+/* --------------------------------------------------
+    base style
+-------------------------------------------------- */
+/* line 65, ../sass/main.scss */
+html {
+  min-height: 100%;
+  height: 100%;
+}
+
+/* line 70, ../sass/main.scss */
+body {
+  font-size: 15px;
+  font-family: "Open Sans", arial, sans-serif;
+  color: #444444;
+  background: #eee;
+  line-height: 1.75;
+  text-rendering: optimizelegibility;
+  min-height: 100%;
+  height: 100%;
+}
+
+/* line 81, ../sass/main.scss */
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/* line 86, ../sass/main.scss */
+img {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+}
+
+/* line 90, ../sass/main.scss */
+.hidden {
+  display: none;
+}
+
+/* --------------------------------------------------
+    main style
+-------------------------------------------------- */
+/* --------------------------------------------------
+	layout
+-------------------------------------------------- */
+/* line 7, ../sass/_layout.scss */
+#mainView {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
+  display: box;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-box-align: center;
+  box-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  min-height: 100%;
+  width: 854px;
+  margin: 0 auto;
+}
+
+/* --------------------------------------------------
+    editor
+-------------------------------------------------- */
+/* line 6, ../sass/_editor.scss */
+#editor {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+  padding: 40px 0;
+  min-height: 420px;
+  width: 100%;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-name: 'editorFadeIn';
+  -webkit-animation-duration: .75s;
+}
+/* line 16, ../sass/_editor.scss */
+#editor.sans-serif {
+  font-family: "Open Sans", arial, sans-serif;
+}
+/* line 20, ../sass/_editor.scss */
+#editor.serif {
+  font-family: "Lora", serif;
+}
+
+@-webkit-keyframes editorFadeIn {
+  /* line 26, ../sass/_editor.scss */
+  0% {
+    opacity: 0;
+    -webkit-filter: blur(1px);
+  }
+
+  /* line 31, ../sass/_editor.scss */
+  25% {
+    opacity: 0;
+    -webkit-filter: blur(1px);
+  }
+
+  /* line 36, ../sass/_editor.scss */
+  100% {
+    opacity: 1;
+    -webkit-filter: blur(0);
+  }
+}
+
+/* title
+---------------------------------------------- */
+/* line 45, ../sass/_editor.scss */
+#editor header h1 {
+  display: none;
+  font-size: 2.25rem;
+  margin-bottom: .5rem;
+  font-family: 'HelveticaNeue-UltraLight','Helvetica Neue UltraLight','Helvetica Neue','Open-Light',sans-serif;
+}
+/* line 51, ../sass/_editor.scss */
+#editor header h1:focus {
+  outline: none;
+}
+
+/* body
+---------------------------------------------- */
+/* line 58, ../sass/_editor.scss */
+#editor .body {
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  font-size: 1rem;
+  min-height: 328px;
+  line-height: 1.55;
+}
+/* line 66, ../sass/_editor.scss */
+#editor .body div, #editor .body p {
+  margin-top: .75em;
+}
+/* line 70, ../sass/_editor.scss */
+#editor .body:focus {
+  outline: none;
+}
+/* line 74, ../sass/_editor.scss */
+#editor .body a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/* --------------------------------------------------
+    setting
+-------------------------------------------------- */
+/* line 6, ../sass/_setting.scss */
+#setting {
+  position: fixed;
+  bottom: 25px;
+  left: 25px;
+  font-size: 10px;
+  font-weight: bold;
+  opacity: 1;
+  -webkit-user-select: none;
+  -webkit-animation-name: 'fadeIn';
+  -webkit-animation-duration: 1s;
+}
+/* line 17, ../sass/_setting.scss */
+#setting > h1 {
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.1s;
+  -moz-transition-duration: 0.1s;
+  -o-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  font-weight: normal;
+  cursor: pointer;
+  opacity: .5;
+}
+/* line 32, ../sass/_setting.scss */
+#setting > h1:hover {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  opacity: 1;
+}
+/* line 40, ../sass/_setting.scss */
+#setting.active h1 {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
+}
+/* line 45, ../sass/_setting.scss */
+#setting > .body {
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  background: #eee;
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  z-index: 1;
+  visibility: hidden;
+  opacity: 0;
+  min-width: 200px;
+}
+/* line 62, ../sass/_setting.scss */
+#setting.active > .body {
+  visibility: visible;
+  opacity: 1;
+  bottom: 35px;
+}
+
+/* table
+---------------------------------------------- */
+/* line 72, ../sass/_setting.scss */
+#setting table {
+  width: 100%;
+}
+/* line 75, ../sass/_setting.scss */
+#setting table th, #setting table td {
+  vertical-align: middle;
+  padding: 5px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 82, ../sass/_setting.scss */
+#setting table select,
+#setting table input {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* --------------------------------------------------
+    utils
+-------------------------------------------------- */
+/* line 91, ../sass/_setting.scss */
+#utils {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  font-size: 10px;
+  font-weight: bold;
+  opacity: 1;
+  -webkit-user-select: none;
+  -webkit-animation-name: 'fadeIn';
+  -webkit-animation-duration: 1s;
+}
+/* line 102, ../sass/_setting.scss */
+#utils > ul li {
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.1s;
+  -moz-transition-duration: 0.1s;
+  -o-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  font-weight: normal;
+  cursor: pointer;
+  opacity: .5;
+}
+/* line 117, ../sass/_setting.scss */
+#utils > ul li:hover {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  opacity: 1;
+}
+/* line 123, ../sass/_setting.scss */
+#utils > ul li:active {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
+}
